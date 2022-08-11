@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSA Process & Export</title>
+
+    <!-- Bootstrap -->
+
+    <!-- CSS only -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+     <!-- JavaScript cdn -->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <!-- / Bootstrap -->
+
+    <!-- Fontawesome -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+      integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <!-- / Fontawesome -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- / google fonts -->
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="col-md-12 col-sm-12">
+
+    <!-- Header -->
+    <header class="overflow-hidden">
+      <div class="home-banner col-12">
+        <div class="container-fluid banner-img p-0">
+          <img src="./assets/img/Banner-5-min.jpg" class="banner" alt="banner" />
+
+           
+
+          <!-- navbar -->
+        <div class="navigation ">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" width="150px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" >
+              <span class=" text-dark"><i class="fa-solid fa-bars"></i></span>
+            </button>
+
+            <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav text-center d-lg-flex pl-3">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link " href="#">Products</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link " href="#">certificates</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link " href="#">gallery</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link " href="#">Brochure</a>
+                </li>
+                  <li class="nav-item">
+                  <a class="nav-link " href="#">Contact Us</a>
+                </li>
+              </ul>
+             <div class="google mr-0 w-">
+               <div id="google_translate_element"></div>
+             </div>
+            </div>
+          </nav>
+          <!-- /Navbar -->
+          </div>
+        </div>
+
+         <!-- fixed object -->
+          <div class="send-enquiery w-100">
+            <h4 class="">Send Enquiery</h4>
+          </div>
+           <div class="message-icon">
+              <i class="fa-solid fa-message"></i>
+           </div>
+
+           <!-- / fixed object -->
+      </div>
+    </header>
+    <!-- // Header -->
+
+    <!-- Products section -->
+    <section class="product pt-5">
+      <div
+        class="products my-3"
+        style="z-index: 10; display: inline; position: relative"
+      >
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-lg-4 px-4">
+              <div class="title d-block text-center">
+                <h2 class="text-danger">Products</h2>
+                <p>BY CATEGORIES</p>
+                <p class="para" style="text-align: justify">
+                  Sri Sai Agro has built it's reputation over the years with a
+                  huge customer base worldwide. We offer a wide range of
+                  products without compromising on the quality. On time delivery
+                  to our global clients is highly prioritised, hence we work
+                  round the clock for speedy completion of orders.
+                </p>
+              </div>
+              <div class="img text-center">
+                <img
+                  src="https://content3.jdmagicbox.com/comp/chennai/r5/044pxx44.xx44.180924135348.z6r5/catalogue/theni-thaniyam-polichalur-chennai-organic-food-wholesalers-pml7mfk9bh-250.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="slanding-text mt-5 px-5 text-center">
+                <h1 class="red my-5 bg-danger text-white">Farming isn't</h1>
+                <h1
+                  class="orange my-5 text-white"
+                  style="background: rgb(240, 96, 44)"
+                >
+                  a Profession,
+                </h1>
+                <h1 class="green my-5 bg-success text-white">
+                  it's a Passion!
+                </h1>
+              </div>
+            </div>
+
+            <!-- Right side -->
+            <div class="col-lg-8">
+              <div class="images">
+                <!-- Row1 -->
+                <div class="row my-5">
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/Moringa.png" alt="" />
+                      <div class="overlay">
+                        <h1>MORINGA</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/coconut.png" alt="" />
+                      <div class="overlay">
+                        <h1>COCONUT</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/grains.png" alt="" />
+                      <div class="overlay">
+                        <h1>Grains &<br />Cereals</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row2 -->
+                <div class="row my-5 py-3">
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/pulses.png" alt="" />
+                      <div class="overlay">
+                        <h1>pulses</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/spices.jpg" alt="" />
+                      <div class="overlay">
+                        <h1>spices</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/herbs.png" alt="" />
+                      <div class="overlay">
+                        <h1>herbs</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Row3 -->
+                <div class="row my-5 py-3">
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/traditional rice.png" alt="" />
+                      <div class="overlay">
+                        <h1>
+                          traditional <br />
+                          rice
+                        </h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/millets.png" alt="" />
+                      <div class="overlay">
+                        <h1>millets</h1>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-2">
+                    <div class="image text-center">
+                      <img src="./assets/img/fruits.png" alt="" />
+                      <div class="overlay">
+                        <h1>others</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--// Products section -->
+
+    <!-- About section -->
+    <section class="about my-5">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row top-content bg-transparent">
+            <div class="col-lg-5 pt-5">
+              <div class="img p-5">
+                <img
+                  src="./assets/img/onion.jpg"
+                  alt=""
+                  style="width: 80%; height: 50%"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 overflow-hidden  offset-lg-1 mt-5 px-5">
+              <h1 class="text-danger my-3">About us</h1>
+              <p class="pr-5">
+                Sri Sai Agro process & Ecports is one of the Leading Outsourcing
+                and Export House,Based in coimbatore city, in the Southern part
+                of india. Sri Sai Agro Process & Exports is typically a 100%
+                Export Oriented Unit recognised by Government of india, owned by
+                Well Qualified and Experienced Agriculturists and Specialities
+                in Agricultural cultivation, processes and sourcing.
+              </p>
+            <div class="button position-relative d-flex justify-content-center">
+               <button class="btn text-center btn-success my-3">- Read More -</button>
+            </div>
+             
+            </div>
+          </div>
+        </div>
+
+        <div class="row bottom-content mt-5 pt-4">
+          <div class="container px-5 overflow-hidden">
+
+            <!-- Top row -->
+            <div class="row d-flex align-items-center bottom-content overflow-hidden">
+              <div class="col-lg-4 text-center">
+                <img
+                  src="./assets/img/corn.png"
+                  alt=""
+                  style="width: 350px;"
+                  class="text-center justify-content-center"
+                />
+                <p class="text-center">CORN</p>
+              </div>
+              <div class="col-lg-4 text-center mt-5">
+                <h4>Picked from the Greeneries</h4>
+                <img
+                  src="./assets/img/thankyou.png"
+                  alt=""
+                  width="200px"
+                  class="text-center my-4"
+                />
+              </div>
+           
+                 <div class="col-lg-4 text-center">
+                <img
+                  src="./assets/img/coconut2.png"
+                  alt=""
+                  style="width: 350px; display: flex; margin: 0 auto;"
+                  class="text-center"
+                />
+                <p class="text-center">COCONUT</p>
+              </div>
+              </div>
+            <!-- Bottom row -->
+             <div class="row py-5 d-flex align-items-center justify-content-center bottom-content">
+              <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <img
+                  src="./assets/img/cinnimon.png"
+                  alt=""
+                  style="width: 350px; display: flex;margin: 0 auto"
+                  class="text-center"
+                />
+                <p class="text-center">CINNAMON</p>
+              </div>
+              <div class="col-lg-4 d-flex flex-column justify-content-center">
+               <img
+                  src="./assets/img/CHICKPEAS-min (1).png"
+                  alt=""
+                  style="width: 350px; display: flex; margin: 0 auto;"
+                  class="text-center"
+                />
+                <p class="text-center">CHICKPEAS </p>
+              </div>
+           
+                 <div class="col-lg-4 d-flex flex-column justify-content-center">
+                <img
+                  src="./assets/img/BLACKPEPPER-min.png"
+                  alt=""
+                  style="width: 350px; display: flex; margin: 0 auto;"
+                  class=""
+                />
+                <p class="text-center">BLACKPEPPER</p>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- // About section -->
+
+    <!-- Gallery -->
+    <section class="gallery ">
+      <div class="container">
+        <div class="row text-center py-5">
+          <div class="col-lg-5 offset-md-4  text-center">
+           <div class="gallery-title">
+              <h1>Photo <span class="text-danger">Gallery</span></h1>
+            <p>Sri Sai Agro has built it's reputation over the years with a huge customer base worldwide. We offer a wide range of products, without compromising on the quality.</p>
+           </div>
+          </div>
+        </div>
+
+                
+      </div>
+
+      <div class="container">
+        <div class="gallery">
+         
+           <div class="content">
+           <div class="aloe gallery-img">
+              <img src="./assets/img/aloe-vera.webp" alt="#" >
+              
+              <div class="layout">
+                <h2>Aloe vera</h2>
+              </div>
+              </div>
+          
+            <div class="vegtables gallery-img">
+              <img src="./assets/img/vegtables.jpg" alt="" style="filter:brightness(40%);">
+              <div class="background"></div>
+              <div class="veg-layout">
+                  <h2 class="text-white">Most Viewable Products <br> In Our Farm</h2>
+                </div>
+           </div>
+
+       
+
+           <div class="orange gallery-img">
+              <img src="./assets/img/orange.jpg" alt="#">
+                <div class="layout">
+                <h2>orange</h2>
+              </div>
+           </div>
+           <div class="pumpkin gallery-img">
+              <img src="./assets/img/pumpkin.jpg" alt="#">
+               <div class="layout">
+                <h2>pumpkin</h2>
+              </div>
+           </div>
+           <div class="soya gallery-img">
+              <img src="./assets/img/soya-beans.webp" alt="#">
+            <div class="layout">
+                <h2>soya beans</h2>
+              </div>
+           </div>
+         
+        </div>
+      </div>
+    </section>
+    <!-- // Gallery -->
+
+    <!-- Queries -->
+    <section class="query mt-5">
+      <div class="contaier-fluid py-5 bg-dark text-light ">
+        <div class="row my-5 pt-5">
+          <div class="col-lg-12 text-center d-flex justify-content-center flex-column">
+            <h1 class="title">Any Queries?</h1>
+            <h5 class="sub-title">
+              Send us an Enquiry
+            </h5>
+          </div>
+        </div>
+
+      
+          <div class="container">
+            <div class="row row1 pb-5">
+            
+              <div class="col-lg-6 my-4 ">
+                <input type="text" minlength="3" class="name w-100" placeholder="Your Name" >
+              </div>
+              <div class="col-lg-6 my-4">
+                <input type="email" class="name w-100" placeholder="Your Email ID" >
+              </div>
+              <div class="col-lg-6 my-4">
+                <input type="text" minlength="10" maxlength="10" class="name w-100" placeholder="Your Phone Number" >
+              </div>
+               <div class="col-lg-6 my-4">
+                <input type="text" minlength="10" maxlength="10" class="name w-100" placeholder="Your City" >
+               
+              </div>
+               <div class="col-lg-12 w-100 my-4">
+                  <textarea name="Your Comments" id="comments" rows="10" class="w-100" placeholder="Your Comments"></textarea>
+                </div>
+                <div class="col-lg-12">
+                  <button class="w-100 text-center text-light" type="submit">Submit</button>
+                </div>
+                
+            </div>
+          </div>
+
+          <hr style="color: white;">
+      
+      </div>
+    </section>
+    <!-- // Queries -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light">
+      <div class="container-fluid">
+        <div class="container pb-2">
+          <div class="row ">
+            
+            <div class="col-lg-4 p-5">
+              <img src="./assets/img/logo.png" width="75%" alt="">
+              <p class="
+              py-3 text" style="color: rgb(166, 168, 168);">Sri Sai Agro Process & Exports is one of the Leading Outsourcing and Export House, based in Coimbatore city, in the Southern part of India.</p>
+              <h3>Follow us</h3>
+              <ul class="list-unstyled d-flex w-50 my-4 justify-content-between follow-us">
+                <li><a href="#"><i class="fa-brands fa-facebook-f px-1"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 p-5 quick-link">
+                <h3 class="mb-4">Quick Links</h3>
+
+                <ul class="list-unstyled">
+                  <li>About Us</li>
+                  <li>Products</li>
+                  <li>Certificate</li>
+                  <li>Gallery</li>
+                  <li>Events</li>
+                  <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="col-lg-4 contact-us p-5">
+              <h3>Contact Us</h3>
+              <div class="address">
+                <ul class="list-unstyled">
+                  <li class="phn">
+                    <div class="card bg-transparent border-0">
+                       <div class="row g-0">
+                          <div class="col-md-4 icon">
+                            <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Phone Number</h5>
+                              <p><a href="#" class="text-light">+91-9944935332</a></p>
+                              <p><a href="#" class="text-light">+91-9944935332</a></p>
+
+             </div>
+            </div>
+         </div>
+</div>
+                  </li>
+                  <li>
+                    <div class="card bg-transparent border-0">
+                      <div class="row g-0">
+                        <div class="col-md-4 icon">
+                          <i class="fa fa-envelope" aria-hidden="true"></i>
+
+
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">E-mail ID</h5>
+                            <p><a href="#" class="text-light">info@srisaiagro.in</a></p>
+                            
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                        <div class="card bg-transparent border-0">
+                      <div class="row g-0">
+                        <div class="col-md-4 icon">
+                         <i class="fa fa-map-marker px-3" aria-hidden="true"></i>
+
+                        </div>
+                        <div class="col-md-8">
+                          <div class="card-body">
+                            <h5 class="card-title">Office Location</h5>
+                            <p><a href="#" class="text-light">No 1/18 1/18-1, Palladam Main Road, <br>
+                            othakkalmandapam, <br>
+                          Coimbatore-641032.</a></p>
+                            
+
+                          </div>
+                        </div>
+                      </div>
+                    </div></li>
+                  
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="row">
+            <div class="col-lg-9">
+              <p class="text-light px-4 mt-1">Copyrights © 2021 Sri Sai Agro Process & Exports, All Rights Reserved & Developed by <span ><a href="#" style="color: greenyellow;">Sai Techno Solutions.</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- // Footer -->
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+  </body>
+</html>
+
+
